@@ -1,21 +1,20 @@
-import { Edges, Html } from '@react-three/drei';
-import React from 'react';
+import { Html, useScroll } from '@react-three/drei';
+import { useFrame } from '@react-three/fiber';
+import * as THREE from 'three'
+import React, { useRef } from 'react';
 
 const BoxC = () => {
+    const meshRef = useRef();
+    const scroll = useScroll();
+
     return (
         <>
-            {/* Add text on the left side */}
-            <Html position={[-2, 0, 0]} transform occlude>
-                <div className='border h-24 w-48 flex justify-center items-center text-xl text-blue-700' >
-                    <div>Ashish Gole</div>
-                </div>
-            </Html>
-
             {/* Add the box on the right side */}
-            <mesh position={[2, 0, 0]}>
+            <mesh ref={meshRef} position={[2, 0, 2]}>
                 <boxGeometry args={[1, 1, 1]} />
-                <meshStandardMaterial color="yellow" />
+                <meshStandardMaterial color="yellow" side={THREE.DoubleSide} />
             </mesh>
+
         </>
     );
 };

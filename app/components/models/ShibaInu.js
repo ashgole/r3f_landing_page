@@ -7,7 +7,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 const Model = (props) => {
     const group = useRef()
-    const { nodes, materials, animations } = useGLTF('models/animals/ShibaInu.gltf')
+    const { nodes, materials, animations } = useGLTF('./models/animals/ShibaInu.gltf')
     const { actions } = useAnimations(animations, group)
     const [isMobile, setIsMobile] = useState(false)
 
@@ -83,6 +83,6 @@ const Model = (props) => {
     )
 }
 
-useGLTF.preload('models/animals/ShibaInu.gltf')
+useGLTF.preload('./models/animals/ShibaInu.gltf')
 
 export default Model

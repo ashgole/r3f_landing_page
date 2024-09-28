@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 const Model = (props) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('models/animals/Cow.gltf')
+  const { nodes, materials, animations } = useGLTF('./models/animals/Cow.gltf')
   const { actions } = useAnimations(animations, group)
   const [isMobile, setIsMobile] = useState(false)
 
@@ -90,6 +90,6 @@ const Model = (props) => {
   )
 }
 
-useGLTF.preload('models/animals/Cow.gltf')
+useGLTF.preload('././models/animals/Cow.gltf')
 
 export default Model

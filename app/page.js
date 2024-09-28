@@ -1,10 +1,9 @@
-// import CanvasC from "./components/canvas/Canvas";
+import CanvasC from "./components/canvas/Canvas";
 
 export default function Home() {
   return (
     <div className="h-screen  ">
-      {/* <CanvasC/> */}
-      ashabb
+      <CanvasC/>
     </div>
   );
 }

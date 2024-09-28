@@ -2,7 +2,7 @@
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import { Environment, OrbitControls } from '@react-three/drei'
-import SceneC from '../scene/SceneC'
+// import SceneC from '../scene/SceneC'
 
 
 const CanvasC = () => {
@@ -12,7 +12,7 @@ const CanvasC = () => {
                 <OrbitControls enableZoom={false} enableRotate={false} enablePan={false}/>
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
-                <SceneC />
+                {/* <SceneC /> */}
                 <Environment  files={'/env/env1.hdr'} background  />
             </Canvas>
         </>

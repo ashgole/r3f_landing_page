@@ -8,7 +8,7 @@ import SceneC from '../scene/SceneC'
 const CanvasC = () => {
     return (
         <>
-            <Canvas>
+            <Canvas className='canvas'>
                 <OrbitControls enableZoom={false} enableRotate={false} enablePan={false} />
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />

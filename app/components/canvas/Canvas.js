@@ -13,7 +13,7 @@ const CanvasC = () => {
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
                 {/* <SceneC /> */}
-                <Environment  files={'/env/env1.hdr'} background  />
+                <Environment  files={'./env/env1.hdr'} background  />
             </Canvas>
         </>
     )

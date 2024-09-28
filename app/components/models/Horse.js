@@ -24,7 +24,7 @@ const Model = (props) => {
 
     return (
         <group
-        position={isMobile ? [0, 0, 0] : [0, -2, -1]} // Move it slightly upwards on mobile
+        position={isMobile ? [0, 0, 0] : [0, -1.5, -1]} // Move it slightly upwards on mobile
         scale={isMobile ? 0.5 : 1} // Scale down the model on mobile
 
         rotation-y={Math.PI+90}

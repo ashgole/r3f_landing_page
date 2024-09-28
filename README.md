@@ -28,8 +28,8 @@ Github : <a href="https://github.com/ashgole/r3f_landing_page" target="_blank">h
 ## how to run
 
 ```
-git clone https://github.com/ashgole/stock_management_nextjs.git
-cd blogging_website_NEXTjs
+git clone https://github.com/ashgole/r3f_landing_page.git
+cd r3f_landing_page
 npm i
 npm run dev
 ```

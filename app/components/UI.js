@@ -14,11 +14,6 @@ export const UI = () => {
             galloping across open fields or taking part in prestigious races, horses capture our
             imaginations and inspire a sense of freedom.
           </p>
-          <p className="mt-2">
-            Horses are also loyal companions and have a long history of working alongside humans
-            in various roles, from agriculture to sports. Their intelligence, elegance, and deep
-            connection with people make them one of the most beloved animals in the world.
-          </p>
         </div>
       </section>
 

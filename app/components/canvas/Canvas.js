@@ -9,11 +9,10 @@ const CanvasC = () => {
     return (
         <>
             <Canvas>
-                <OrbitControls enableZoom={false}  />
+                <OrbitControls enableZoom={false} enableRotate={false} enablePan={false}/>
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
                 <SceneC />
-                {/* <color attach="background" args={['green']}/> */}
                 <Environment  files={'/env/env1.hdr'} background  />
             </Canvas>
         </>

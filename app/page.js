@@ -1,10 +1,9 @@
-import Hero from "./components/hero/Hero";
-
+import CanvasC from "./components/canvas/Canvas";
 
 export default function Home() {
   return (
     <div className="h-screen  ">
-      <Hero/>
+      <CanvasC/>
     </div>
   );
 }

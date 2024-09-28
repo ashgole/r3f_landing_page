@@ -1,14 +1,15 @@
+import { Box } from '@react-three/drei'
 import React from 'react'
 
-const Box = () => {
+const BoxC = () => {
     return (
         <>
-            <mesh position={[0, 0, 0]}>
+            <Box position={[0, 0, 0]}>
                 <boxGeometry args={[1, 1, 1]} />
                 <meshStandardMaterial color="yellow" />
-            </mesh>
+            </Box>
         </>
     )
 }
 
-export default Box
+export default BoxC

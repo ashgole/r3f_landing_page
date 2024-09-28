@@ -1,20 +1,21 @@
 'use client'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
-import Box from '../box/Box'
 import { OrbitControls } from '@react-three/drei'
+import SceneC from '../scene/Scene'
 
-const Hero = () => {
+
+const CanvasC = () => {
     return (
         <>
             <Canvas>
-                <OrbitControls/>
+                <OrbitControls enableZoom={false}/>
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
-                <Box/>
+                <SceneC />
             </Canvas>
         </>
     )
 }
 
-export default Hero
+export default CanvasC

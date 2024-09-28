@@ -24,7 +24,7 @@ export const metadata = {
     images: [
       {
         url: "https://ashabb.vercel.app/logo.jpg",
-        alt: "ASHABB Landing Page",
+        alt: "ASHABB R3F Landing Page",
       },
     ],
   },
@@ -39,8 +39,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <Header /> */}
-        {children}
+
+        <div className="root">
+          {children}
+        </div>
       </body>
     </html>
   );

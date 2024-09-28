@@ -1,15 +1,15 @@
 'use client'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
-import { Environment, Html, OrbitControls } from '@react-three/drei'
+import { Environment, Html } from '@react-three/drei'
 import SceneC from '../scene/SceneC'
 
 
 const CanvasC = () => {
     return (
         <>
-            <Canvas className='canvas'>
-                <OrbitControls enableZoom={false} enableRotate={false} enablePan={false} />
+            <Canvas   >
+                {/* <OrbitControls enableZoom={false} enableRotate={false} enablePan={false} /> */}
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
                 <Suspense fallback={

@@ -1,6 +1,5 @@
 import { Edges, Html, useScroll } from '@react-three/drei';
 import React, { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
 
 const SphereC = () => {
     const scroll = useScroll();

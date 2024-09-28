@@ -3,12 +3,12 @@
 export const UI = () => {
   return (
     <>
-      <section className="h-screen w-screen flex items-center justify-center text-center    select-none">
+      <section className="  h-screen w-screen flex items-end justify-center text-center    select-none">
         <div>
-          <h1 className="mt-40 text-6xl font-bold font-serif ">
+          <h1 className="mb-4 text-6xl font-bold font-serif ">
             Majestic Horse 🐎
           </h1>
-          <p className="mt-4">
+          <p className="mb-16">
             The horse is one of the most graceful and powerful creatures in the animal kingdom.
             Known for its speed, beauty, and strength, it has served humans for centuries. Whether
             galloping across open fields or taking part in prestigious races, horses capture our
@@ -17,7 +17,7 @@ export const UI = () => {
         </div>
       </section>
 
-      <section className="h-screen w-screen flex items-center p-8 lg:p-20 select-none max-w-screen-xl mx-auto">
+      <section className=" h-screen w-screen flex items-end p-8 lg:p-20 select-none max-w-screen-xl mx-auto">
         <div>
           <h2 className="text-2xl font-bold font-serif">The Gentle Giant</h2>
           <h3 className="text-5xl font-bold font-serif">Daisy the Cow</h3>
@@ -34,7 +34,7 @@ export const UI = () => {
         </div>
       </section>
 
-      <section className="h-screen w-screen flex items-center p-8 lg:p-20 select-none max-w-screen-xl mx-auto">
+      <section className=" h-screen w-screen flex items-end p-8 lg:p-20 select-none max-w-screen-xl mx-auto">
         <div>
           <h2 className="text-2xl font-bold font-serif">The Loyal Companion</h2>
           <h3 className="text-5xl font-bold font-serif">Shiba Inu</h3>

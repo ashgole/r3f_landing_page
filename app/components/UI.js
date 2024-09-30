@@ -3,7 +3,7 @@
 export const UI = () => {
   return (
     <>
-      <section className="h-screen w-screen flex items-end justify-center text-center select-none">
+      <section className="p-8 h-screen w-screen flex items-end justify-center text-center select-none">
         <div>
           <h1 className="mb-4 text-6xl font-bold font-serif">Beloved Pet Companions 🐾</h1>
           <p className="mb-16">

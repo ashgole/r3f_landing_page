@@ -33,7 +33,9 @@ const Experience = () => {
 
     return (
         <>
-            <group position={[0, 0, 0]} scale={restaurantScalingFactor} rotation-y={degToRad(-7)} rotation-x={degToRad(25)}>
+            <group
+             position={isMobile ? [0, 1, 0]:[0, 0, 0]}
+              scale={restaurantScalingFactor} rotation-y={degToRad(-7)} rotation-x={degToRad(25)}>
                 <Gltf src="models/Restaurant.glb" scale={0.3} castShadow />
                 <AccumulativeShadows
                     temporal

@@ -9,7 +9,6 @@ const Model = (props) => {
     const group = useRef()
     const { nodes, materials, animations } = useGLTF('./models/animals/ShibaInu.gltf')
     const { actions } = useAnimations(animations, group)
-    const [isMobile, setIsMobile] = useState(false)
 
     useEffect(() => {
         if (actions) {
@@ -17,20 +16,9 @@ const Model = (props) => {
         }
     }, [actions])
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768) // Any width <= 768px is considered mobile
-        }
-        handleResize() // Run on component mount
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
 
     return (
         <group
-            rotation-y={Math.PI + 90}
-            position={isMobile ? [0, -14.2, 0] : [5, -17, -2]} // Move it slightly upwards on mobile
-            scale={isMobile ? 0.5 : 1} // Scale down the model on mobile
             ref={group} {...props} dispose={null}>
             <group name="Scene">
                 <group name="AnimalArmature">

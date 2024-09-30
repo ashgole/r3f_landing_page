@@ -5,7 +5,6 @@ const Model = (props) => {
     const group = useRef()
     const { nodes, materials, animations } = useGLTF('./models/animals/Horse_White.gltf')
     const { actions } = useAnimations(animations, group)
-    const [isMobile, setIsMobile] = useState(false)
 
     useEffect(() => {
         if (actions) {
@@ -13,23 +12,11 @@ const Model = (props) => {
         }
     }, [actions])
 
-    useEffect(() => {
-        const handleResize = () => {
-          setIsMobile(window.innerWidth <= 768) // Any width <= 768px is considered mobile
-        }
-        handleResize() // Run on component mount
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-      }, [])
+
 
     return (
         <group
-        position={isMobile ? [0.5, 0, 0] : [0, -1.5, -1]} // Move it slightly upwards on mobile
-        scale={isMobile ? 0.5 : 1} // Scale down the model on mobile
-
-        rotation-y={Math.PI+2.3}
-
-        ref={group} {...props} dispose={null}>
+            ref={group} {...props} dispose={null}>
             <group name="Scene">
                 <group name="AnimalArmature">
                     <group name="Horse">

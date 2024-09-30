@@ -1,15 +1,17 @@
 'use client'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
-import { Environment, Html } from '@react-three/drei'
+import {  Html, OrbitControls } from '@react-three/drei'
 import SceneC from '../scene/SceneC'
 
 
 const CanvasC = () => {
     return (
         <>
-            <Canvas   >
-                {/* <OrbitControls enableZoom={false} enableRotate={false} enablePan={false} /> */}
+            <Canvas shadows >
+                 <OrbitControls enableZoom={false} enablePan={false} />
+                 {/*<axesHelper args={[5]} /> */}
+
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
                 <Suspense fallback={
@@ -21,7 +23,6 @@ const CanvasC = () => {
                 }>
                     {/* This fallback will display while the environment is loading */}
                     <SceneC />
-                    <Environment files={'./env/env1.hdr'} background />
                 </Suspense>
             </Canvas>
         </>

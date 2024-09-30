@@ -6,7 +6,6 @@ const Model = (props) => {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('./models/animals/Cow.gltf')
   const { actions } = useAnimations(animations, group)
-  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     if (actions) {
@@ -14,21 +13,9 @@ const Model = (props) => {
     }
 }, [actions])
 
-  // Detect if the user is on a mobile device
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768) // Any width <= 768px is considered mobile
-    }
-    handleResize() // Run on component mount
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
 
   return (
     <group
-      rotation-y={Math.PI +2.2}
-      position={isMobile ? [0.8, -8, 0] : [5, -9.6, -2]} // Move it slightly upwards on mobile
-      scale={isMobile ? 0.5 : 0.7} // Scale down the model on mobile
       ref={group}
       {...props}
       dispose={null}

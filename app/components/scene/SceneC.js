@@ -1,17 +1,13 @@
 import { Scroll, ScrollControls } from '@react-three/drei';
 import React from 'react';
 import { UI } from '../UI';
-import Horse from '.././models/Horse';
-import Cow from '.././models/Cow';
-import ShibaInu from '.././models/ShibaInu';
+import Experience from '../experience/Experience';
 
 const SceneC = () => {
     return (
-        <ScrollControls pages={4}> {/* Increased pages to give more scrolling space */}
+        <ScrollControls pages={5}> {/* Increased pages to give more scrolling space */}
             <Scroll>
-                <Horse />
-                <Cow />
-                <ShibaInu />
+                <Experience />
             </Scroll>
             <Scroll html>
                 <UI />

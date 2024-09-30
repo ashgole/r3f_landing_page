@@ -29,7 +29,7 @@ const Model = (props) => {
     return (
         <group
             rotation-y={Math.PI + 90}
-            position={isMobile ? [0, -14, 0] : [5, -17, -2]} // Move it slightly upwards on mobile
+            position={isMobile ? [0, -14.2, 0] : [5, -17, -2]} // Move it slightly upwards on mobile
             scale={isMobile ? 0.5 : 1} // Scale down the model on mobile
             ref={group} {...props} dispose={null}>
             <group name="Scene">

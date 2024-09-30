@@ -16,6 +16,7 @@ const SceneC = () => {
             <Scroll html>
                 <UI />
             </Scroll>
+
         </ScrollControls>
     );
 };

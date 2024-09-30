@@ -21,8 +21,7 @@ const CanvasC = () => {
                         </div>
                     </Html>
                 }>
-                    {/* This fallback will display while the environment is loading */}
-                    <SceneC />
+                      <SceneC />
                 </Suspense>
             </Canvas>
         </>

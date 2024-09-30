@@ -1,5 +1,4 @@
 import { AccumulativeShadows, Environment, Gltf, RandomizedLight, Sky } from '@react-three/drei'
-import { useControls } from 'leva'
 import React, { useEffect, useState } from 'react'
 import { degToRad } from 'three/src/math/MathUtils'
 import Horse from '.././models/Horse';
@@ -51,8 +50,8 @@ const Experience = () => {
             {/* horse */}
             <group
                 rotation-y={degToRad(yRotaion)}
-                position={isMobile ? [xPosition - 4, yPosition - 7.5, 0] : [xPosition, yPosition - 9.6, -2]}  // Move it slightly upwards on mobile
-                scale={isMobile ? scale - 0.5 : scale} // Scale down the model on mobile
+                position={isMobile ? [xPosition - 4, yPosition - 7.5, 0] : [xPosition, yPosition - 9.6, -2]}
+                scale={isMobile ? scale - 0.5 : scale}
             >
                 <Horse />
             </group>
@@ -60,8 +59,8 @@ const Experience = () => {
             {/* cow */}
             <group
                 rotation-y={degToRad(yRotaion)}
-                position={isMobile ? [xPosition - 4, yPosition - 16, 0] : [xPosition, yPosition - 17, -2]}  // Move it slightly upwards on mobile
-                scale={isMobile ? scale - 0.5 : scale - 0.2} // Scale down the model on mobile
+                position={isMobile ? [xPosition - 4, yPosition - 16, 0] : [xPosition, yPosition - 17, -2]}
+                scale={isMobile ? scale - 0.5 : scale - 0.2}
             >
                 <Cow />
             </group>
@@ -69,8 +68,8 @@ const Experience = () => {
             {/* dog */}
             <group
                 rotation-y={degToRad(yRotaion)}
-                position={isMobile ? [xPosition - 4, yPosition - 22, 0] : [xPosition, yPosition - 25, -2]}  // Move it slightly upwards on mobile
-                scale={isMobile ? scale - 0.2 : scale} // Scale down the model on mobile
+                position={isMobile ? [xPosition - 4, yPosition - 22, 0] : [xPosition, yPosition - 25, -2]}
+                scale={isMobile ? scale - 0.2 : scale}
             >
                 <Dog />
             </group>

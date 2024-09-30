@@ -61,8 +61,8 @@ const Experience = () => {
             {/* cow */}
             <group
                 rotation-y={degToRad(yRotaion)}
-                position={isMobile ? [xPosition - 4.5, yPosition - 16.5, 0] : [xPosition, yPosition - 17, -2]}
-                scale={isMobile ? scale - 0.7 : scale - 0.2}
+                position={isMobile ? [xPosition - 4.5, yPosition - 15.2, 0] : [xPosition, yPosition - 17, -2]}
+                scale={isMobile ? scale - 0.65 : scale - 0.2}
             >
                 <Cow />
             </group>

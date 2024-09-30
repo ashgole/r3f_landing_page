@@ -5,7 +5,7 @@ export const UI = () => {
     <>
       <section className="p-8 h-screen w-screen flex items-end justify-center text-center select-none">
         <div>
-          <h1 className="mb-4 text-6xl font-bold font-serif">Beloved Pet Companions 🐾</h1>
+          <h1 className="mb-4 text-4xl font-bold font-serif">Beloved Pet Companions 🐾</h1>
           <p className="mb-16">
             Pet animals bring joy, companionship, and unconditional love into our lives. From playful dogs and curious cats to gentle rabbits and exotic birds, each pet has its unique charm and personality.
             They offer comfort in our toughest times and share in our happiest moments, reminding us of the simple pleasures of life. Whether through a wagging tail or a gentle purr, our furry and feathered friends are truly family.
@@ -58,6 +58,17 @@ export const UI = () => {
 
       <section className="h-screen w-screen flex flex-col items-center justify-center text-center p-8 lg:p-20 select-none max-w-screen-xl mx-auto">
         <div>
+          <p className="mb-4">
+            <a
+
+              target="_blank"
+              href="https://ashabb.vercel.app"
+              className="text-2xl text-blue-500 underline"
+            >
+              ASHABB - We offer freelance web development using MERN, Next.js, and Three.js.
+            </a>
+          </p>
+
           <h2 className="text-2xl font-bold font-serif">Our Beloved Pets</h2>
           <p className="mt-2">
             Pets bring joy, companionship, and unconditional love into our lives. 🐾 <br />

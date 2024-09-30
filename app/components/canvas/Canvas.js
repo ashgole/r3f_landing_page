@@ -16,9 +16,9 @@ const CanvasC = () => {
                 <pointLight position={[10, 10, 10]} />
                 <Suspense fallback={
                     <Html fullscreen>
-                    <div className="p-4 flex flex-col justify-center items-center text-blue-400 border w-screen h-screen">
+                    <div className="text-center p-4 flex flex-col justify-center items-center text-blue-400 border w-screen h-screen">
                       <div className="text-3xl mb-4">Loading, please wait...</div>
-                      <p className="text-lg">
+                      <p className="text-lg ">
                         Welcome to our Pet Companions Showcase! 🐾
                       </p>
                       <p className="mt-2 text-sm">

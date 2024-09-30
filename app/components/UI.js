@@ -26,10 +26,7 @@ export const UI = () => {
             nourishment and abundance. 🐄 <br />
             Daisy, our farm's pride, grazes peacefully under the open skies and helps provide some
             of the freshest dairy you’ll ever taste. 🧀
-            <br />
-            <br />
-            Cows are also incredibly intelligent and social animals, forming strong bonds with
-            their herd. If you're lucky, you might just catch Daisy enjoying her favorite patch of grass! 🌿
+
           </p>
         </div>
       </section>

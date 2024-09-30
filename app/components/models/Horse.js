@@ -27,7 +27,7 @@ const Model = (props) => {
         position={isMobile ? [0, 0, 0] : [0, -1.5, -1]} // Move it slightly upwards on mobile
         scale={isMobile ? 0.5 : 1} // Scale down the model on mobile
 
-        rotation-y={Math.PI+90}
+        rotation-y={Math.PI+2.3}
 
         ref={group} {...props} dispose={null}>
             <group name="Scene">

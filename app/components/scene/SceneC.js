@@ -10,11 +10,7 @@ const SceneC = () => {
         <ScrollControls pages={4}> {/* Increased pages to give more scrolling space */}
             <Scroll>
                 <Horse />
-            </Scroll>
-            <Scroll>
                 <Cow />
-            </Scroll>
-            <Scroll>
                 <ShibaInu />
             </Scroll>
             <Scroll html>

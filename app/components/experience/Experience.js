@@ -52,7 +52,7 @@ const Experience = () => {
             {/* horse */}
             <group
                 rotation-y={degToRad(yRotaion)}
-                position={isMobile ? [xPosition - 4, yPosition - 7.5, 0] : [xPosition, yPosition - 9.6, -2]}
+                position={isMobile ? [xPosition - 4.5, yPosition - 7.5, 0] : [xPosition, yPosition - 9.6, -2]}
                 scale={isMobile ? scale - 0.5 : scale}
             >
                 <Horse />
@@ -61,8 +61,8 @@ const Experience = () => {
             {/* cow */}
             <group
                 rotation-y={degToRad(yRotaion)}
-                position={isMobile ? [xPosition - 4, yPosition - 16, 0] : [xPosition, yPosition - 17, -2]}
-                scale={isMobile ? scale - 0.5 : scale - 0.2}
+                position={isMobile ? [xPosition - 4.5, yPosition - 16.5, 0] : [xPosition, yPosition - 17, -2]}
+                scale={isMobile ? scale - 0.7 : scale - 0.2}
             >
                 <Cow />
             </group>
@@ -70,8 +70,8 @@ const Experience = () => {
             {/* dog */}
             <group
                 rotation-y={degToRad(yRotaion)}
-                position={isMobile ? [xPosition - 4, yPosition - 22, 0] : [xPosition, yPosition - 25, -2]}
-                scale={isMobile ? scale - 0.2 : scale}
+                position={isMobile ? [xPosition - 4.5, yPosition - 23, 0] : [xPosition, yPosition - 24, -2]}
+                scale={isMobile ? scale - 0.4 : scale}
             >
                 <Dog />
             </group>
